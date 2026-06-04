@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Dr. Hyder Ali Segu Mohamed</title>
+<meta name="description" content="Research and student projects supervised by Dr. Hyder Ali in image processing, machine learning, signal processing and embedded systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+
+<aside class="sidebar" id="sidebar">
+  <img class="avatar" src="assets/profile.jpg" alt="Dr. Hyder Ali Segu Mohamed"
+       onerror="this.style.background='#dcd6cf';this.removeAttribute('src')">
+  <div class="namecard">
+    <div class="name">Dr. Hyder Ali Segu Mohamed</div>
+    <div class="title">Professor of Electrical &amp;<br>Electronics Engineering</div>
+    <div class="affil">Ashesi University · Ghana</div>
+  </div>
+  <div class="socials">
+    <a href="mailto:hyderali.mohamed@ashesi.edu.gh" title="Email">@</a>
+    <a href="https://scholar.google.co.in/citations?hl=en&user=rugwMjQAAAAJ" target="_blank" rel="noopener" title="Google Scholar">GS</a>
+    <a href="https://orcid.org/0000-0001-9434-0257" target="_blank" rel="noopener" title="ORCID">iD</a>
+    <a href="https://www.webofscience.com/wos/author/record/E-9625-2015" target="_blank" rel="noopener" title="Web of Science">WoS</a>
+    <a href="https://ashesi.edu.gh/faculty-profile/hyder-ali-segu-mohamed-ph-d/" target="_blank" rel="noopener" title="Faculty page">A</a>
+  </div>
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="contact-block">
+    <strong>Email</strong><br>
+    <a href="mailto:hyderali.mohamed@ashesi.edu.gh">hyderali.mohamed@ashesi.edu.gh</a><br><br>
+    <strong>Office</strong><br>
+    Ashesi University<br>1 University Avenue,<br>Berekuso, Ghana
+  </div>
+</aside>
+<button class="menu-toggle" onclick="document.getElementById('sidebar').classList.toggle('open')">☰ Menu</button>
+
+<main class="content">
+  <div style="text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;color:var(--accent);font-weight:600;margin-bottom:.6rem">Projects</div>
+  <h1>Projects</h1>
+  <p class="lead">
+    A selection of research, sponsored and supervised student projects spanning medical imaging,
+    deep learning, signal processing and embedded systems.
+  </p>
+
+  <section class="section reveal">
+    <h2>Ongoing</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Diabetic Retinopathy Detection using Deep Learning</h3>
+        <p>Convolutional models for early screening of diabetic retinopathy from retinal fundus images — supporting clinicians in resource-constrained settings.</p>
+        <div class="tag-row"><span>Deep Learning</span><span>Medical Imaging</span><span>Current</span></div>
+      </div>
+      <div class="card">
+        <h3>EMG-Based Control for Assistive Devices</h3>
+        <p>Machine-learning models for surface-EMG signal classification to power assistive and rehabilitation devices.</p>
+        <div class="tag-row"><span>ML</span><span>Bio-signals</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <h2>Selected Past Projects</h2>
+    <ul>
+      <li><strong>Medical Image Denoising using Curvelet Transform</strong> — doctoral and post-doctoral work on artifact-free MR/CT denoising.</li>
+      <li><strong>Wavelet Denoising of Medical Images</strong> — hybrid wavelet + total-variation thresholding.</li>
+      <li><strong>Medical Image Fusion using Wavelet Transform</strong> — fusion of MRI and CT for clinical decision support.</li>
+      <li><strong>Automated Segmentation in Computer Tomography Imaging</strong> — pixel-level segmentation pipelines.</li>
+      <li><strong>Multiresolution Watermarking using Wavelet Transform</strong> — robust watermarking for medical and natural images.</li>
+      <li><strong>Speech Analysis using Wavelet Transform</strong> — multi-resolution analysis of speech signals.</li>
+      <li><strong>Digital Image Enhancement &amp; Compression using Wavelet Transform</strong>.</li>
+      <li><strong>Image Filtering using Median and Averaging Filters</strong>.</li>
+      <li><strong>FFT-Based Spectrum Analyzer using TMS320C50</strong> — DSP implementation on TI hardware.</li>
+      <li><strong>IoT-based Smart Irrigation &amp; Monitoring System for Agriculture</strong> — published as a book chapter, 2022.</li>
+      <li><strong>Social Bots Detection on OSNs</strong> — behavior-enhanced ML detection of automated accounts.</li>
+      <li><strong>Twitter Spammer Identification using URL-based Detection</strong>.</li>
+    </ul>
+  </section>
+
+  <!--
+  <section class="section reveal">
+    <h2>Funded Grants</h2>
+    <ul>
+      <li><strong>Project Title</strong> — Funding agency, amount, dates. (Uncomment and fill in when available.)</li>
+    </ul>
+  </section>
+  -->
+
+  <div class="footer">© <span id="yr"></span> Dr. Hyder Ali Segu Mohamed</div>
+</main>
+</div>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>
